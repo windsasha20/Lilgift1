@@ -5,15 +5,16 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
+    // Плагины для React и TailwindCSS
     react(),
     tailwindcss(),
   ],
   resolve: {
     alias: {
-      // Alias @ to the src directory
+      // Алиас @ → src, уже был
       '@': path.resolve(__dirname, './src'),
+      // Новый алиас src → src, чтобы прямой импорт 'src/...' работал
+      'src': path.resolve(__dirname, './src'),
     },
   },
 })
