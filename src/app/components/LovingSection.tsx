@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Heart } from 'lucide-react';
-import sadImage from 'figma:asset/2dc497eb98e8d0dea81c0218f34acc512fe4f3f5.png';
-import happyImage from 'figma:asset/d173e5b4d3b75ca52b49c1222e9d3f4593c84f80.png';
+import sadImage from './assets/sad.jpg';
+import happyImage from './assets/happy.jpg';
 
 export function LovingSection() {
   const [isHappy, setIsHappy] = useState(false);
